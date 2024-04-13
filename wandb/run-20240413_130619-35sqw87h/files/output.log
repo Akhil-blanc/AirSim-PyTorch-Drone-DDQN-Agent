@@ -1,0 +1,41 @@
+Using device: cuda
+NVIDIA RTX A5000
+Starting...
+----------------------------------------------------------------------------------------
+Training will start after  477  steps.
+----------------------------------------------------------------------------------------
+Training will start after  442  steps.
+----------------------------------------------------------------------------------------
+Training will start after  420  steps.
+----------------------------------------------------------------------------------------
+Training will start after  385  steps.
+----------------------------------------------------------------------------------------
+Training will start after  350  steps.
+----------------------------------------------------------------------------------------
+Training will start after  315  steps.
+----------------------------------------------------------------------------------------
+Training will start after  280  steps.
+----------------------------------------------------------------------------------------
+Training will start after  255  steps.
+----------------------------------------------------------------------------------------
+Training will start after  220  steps.
+----------------------------------------------------------------------------------------
+Training will start after  185  steps.
+----------------------------------------------------------------------------------------
+Training will start after  150  steps.
+----------------------------------------------------------------------------------------
+Training will start after  115  steps.
+----------------------------------------------------------------------------------------
+Training will start after  80  steps.
+----------------------------------------------------------------------------------------
+Training will start after  45  steps.
+----------------------------------------------------------------------------------------
+Training will start after  10  steps.
+Traceback (most recent call last):
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/run.py", line 11, in <module>
+    ddqn_agent.train()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 255, in train
+    self.learn()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 192, in learn
+    states = state_sequences.to(device)
+AttributeError: 'list' object has no attribute 'to'

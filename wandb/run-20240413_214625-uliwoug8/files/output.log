@@ -1,0 +1,234 @@
+Using device: cuda
+NVIDIA RTX A5000
+Save directory:  /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/saved models
+38
+Saved parameters loaded
+Model:  saved models/EPISODE76.pt
+Steps done:  3028
+Episode:  76
+Starting...
+/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/DQRN_net.py:85: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if x.size(-1) != 84 or x.size(-2) != 84:
+----------------------------------------------------------------------------------------
+Training will start after  221  steps.
+----------------------------------------------------------------------------------------
+Training will start after  186  steps.
+----------------------------------------------------------------------------------------
+Training will start after  151  steps.
+----------------------------------------------------------------------------------------
+Training will start after  138  steps.
+----------------------------------------------------------------------------------------
+Training will start after  126  steps.
+----------------------------------------------------------------------------------------
+Training will start after  91  steps.
+----------------------------------------------------------------------------------------
+Training will start after  56  steps.
+----------------------------------------------------------------------------------------
+Training will start after  36  steps.
+----------------------------------------------------------------------------------------
+Training will start after  1  steps.
+----------------------------------------------------------------------------------------
+episode:76, reward: 0.9660565242433137, mean reward: -0.21, score: -7.227710351758645, epsilon: 0.8110276437936, total steps: 3318
+Total Memory: 23.68 GB
+Allocated Memory: 412.08 MB
+Cached Memory: 1.55 GB
+Free Memory: 21.13 GB
+Episode is done, episode time:  91.16151189804077
+----------------------------------------------------------------------------------------
+episode:77, reward: 1.3991185940724478, mean reward: -0.87, score: -30.60462020177644, epsilon: 0.81014029592941, total steps: 3353
+Total Memory: 23.68 GB
+Allocated Memory: 425.28 MB
+Cached Memory: 1.56 GB
+Free Memory: 21.1 GB
+Episode is done, episode time:  90.86423420906067
+----------------------------------------------------------------------------------------
+episode:78, reward: -1.5975688942919746, mean reward: -0.55, score: -19.38902961387312, epsilon: 0.8092539827007399, total steps: 3388
+Total Memory: 23.68 GB
+Allocated Memory: 438.47 MB
+Cached Memory: 1.58 GB
+Free Memory: 21.07 GB
+Episode is done, episode time:  88.64419865608215
+----------------------------------------------------------------------------------------
+episode:79, reward: -50, mean reward: -8.98, score: -62.84158146016172, epsilon: 0.809076844105083, total steps: 3395
+Total Memory: 23.68 GB
+Allocated Memory: 441.11 MB
+Cached Memory: 1.58 GB
+Free Memory: 21.07 GB
+Episode is done, episode time:  111.6123731136322
+----------------------------------------------------------------------------------------
+TEST, reward: 500, score: 546.6026924996627, total steps: 3395
+Test is done, test time:  48.33113241195679
+----------------------------------------------------------------------------------------
+episode:80, reward: -1.3068346428262174, mean reward: -0.36, score: -12.59801151712788, epsilon: 0.8081917708467513, total steps: 3430
+Total Memory: 23.68 GB
+Allocated Memory: 454.3 MB
+Cached Memory: 1.6 GB
+Free Memory: 21.04 GB
+Episode is done, episode time:  89.0533812046051
+----------------------------------------------------------------------------------------
+episode:81, reward: 1.4751574421296567, mean reward: -0.79, score: -27.639869040746973, epsilon: 0.8073077295717803, total steps: 3465
+Total Memory: 23.68 GB
+Allocated Memory: 467.5 MB
+Cached Memory: 1.61 GB
+Free Memory: 21.02 GB
+Episode is done, episode time:  91.84349179267883
+----------------------------------------------------------------------------------------
+episode:82, reward: -0.3660912576991109, mean reward: -0.1, score: -3.6252985256376817, epsilon: 0.8064247190768916, total steps: 3500
+Total Memory: 23.68 GB
+Allocated Memory: 480.69 MB
+Cached Memory: 1.62 GB
+Free Memory: 20.99 GB
+Episode is done, episode time:  88.6967134475708
+----------------------------------------------------------------------------------------
+episode:83, reward: -1.8686921806974084, mean reward: -0.13, score: -4.621388457801245, epsilon: 0.8055427381602094, total steps: 3535
+Total Memory: 23.68 GB
+Allocated Memory: 493.88 MB
+Cached Memory: 1.64 GB
+Free Memory: 20.96 GB
+Episode is done, episode time:  91.96113634109497
+----------------------------------------------------------------------------------------
+episode:84, reward: -50, mean reward: -2.33, score: -65.2199624739537, epsilon: 0.8048378939164067, total steps: 3563
+Total Memory: 23.68 GB
+Allocated Memory: 504.44 MB
+Cached Memory: 1.65 GB
+Free Memory: 20.94 GB
+Episode is done, episode time:  75.17411422729492
+----------------------------------------------------------------------------------------
+episode:85, reward: 2.247200954672927, mean reward: -0.41, score: -14.352120734708478, epsilon: 0.8039577632162425, total steps: 3598
+Total Memory: 23.68 GB
+Allocated Memory: 517.63 MB
+Cached Memory: 1.66 GB
+Free Memory: 20.91 GB
+Episode is done, episode time:  91.085378408432
+----------------------------------------------------------------------------------------
+episode:86, reward: -3.0482101583804138, mean reward: -0.28, score: -9.88794423224386, epsilon: 0.8030786587364832, total steps: 3633
+Total Memory: 23.68 GB
+Allocated Memory: 530.82 MB
+Cached Memory: 1.68 GB
+Free Memory: 20.89 GB
+Episode is done, episode time:  92.92052006721497
+----------------------------------------------------------------------------------------
+episode:87, reward: -50, mean reward: -2.57, score: -53.90148201155576, epsilon: 0.8025516881365955, total steps: 3654
+Total Memory: 23.68 GB
+Allocated Memory: 538.74 MB
+Cached Memory: 1.68 GB
+Free Memory: 20.87 GB
+Episode is done, episode time:  57.08825349807739
+----------------------------------------------------------------------------------------
+episode:88, reward: -1.686970546840115, mean reward: -0.75, score: -26.151107617345474, epsilon: 0.8016742231212225, total steps: 3689
+Total Memory: 23.68 GB
+Allocated Memory: 551.93 MB
+Cached Memory: 1.7 GB
+Free Memory: 20.84 GB
+Episode is done, episode time:  88.06367659568787
+----------------------------------------------------------------------------------------
+episode:89, reward: -1.312224134763639, mean reward: -1.09, score: -38.24751863584481, epsilon: 0.8007977812181024, total steps: 3724
+Total Memory: 23.68 GB
+Allocated Memory: 565.13 MB
+Cached Memory: 1.71 GB
+Free Memory: 20.82 GB
+Episode is done, episode time:  89.22424125671387
+----------------------------------------------------------------------------------------
+TEST, reward: 500, score: 548.5898885343922, total steps: 3724
+Test is done, test time:  44.318552017211914
+----------------------------------------------------------------------------------------
+episode:90, reward: -2.481810494141243, mean reward: -1.14, score: -39.89328288020913, epsilon: 0.7999223612343005, total steps: 3759
+Total Memory: 23.68 GB
+Allocated Memory: 578.32 MB
+Cached Memory: 1.73 GB
+Free Memory: 20.79 GB
+Episode is done, episode time:  91.8884961605072
+----------------------------------------------------------------------------------------
+episode:91, reward: -50, mean reward: -4.14, score: -74.53846066255468, epsilon: 0.7994725427765917, total steps: 3777
+Total Memory: 23.68 GB
+Allocated Memory: 585.1 MB
+Cached Memory: 1.73 GB
+Free Memory: 20.78 GB
+Episode is done, episode time:  50.21044397354126
+----------------------------------------------------------------------------------------
+episode:92, reward: -3.6480672440872155, mean reward: -1.06, score: -37.06229737019757, epsilon: 0.7985986680027571, total steps: 3812
+Total Memory: 23.68 GB
+Allocated Memory: 598.3 MB
+Cached Memory: 1.75 GB
+Free Memory: 20.75 GB
+Episode is done, episode time:  90.71722555160522
+----------------------------------------------------------------------------------------
+episode:93, reward: 1.348255588972151, mean reward: -0.6, score: -20.902149644808162, epsilon: 0.797725812155003, total steps: 3847
+Total Memory: 23.68 GB
+Allocated Memory: 611.49 MB
+Cached Memory: 1.76 GB
+Free Memory: 20.72 GB
+Episode is done, episode time:  92.79626083374023
+----------------------------------------------------------------------------------------
+episode:94, reward: -50, mean reward: -2.08, score: -68.58673465666767, epsilon: 0.796903765969924, total steps: 3880
+Total Memory: 23.68 GB
+Allocated Memory: 623.93 MB
+Cached Memory: 1.78 GB
+Free Memory: 20.69 GB
+Episode is done, episode time:  85.53334307670593
+----------------------------------------------------------------------------------------
+episode:95, reward: -50, mean reward: -1.66, score: -57.964906442591456, epsilon: 0.7960328863548481, total steps: 3915
+Total Memory: 23.68 GB
+Allocated Memory: 637.12 MB
+Cached Memory: 1.79 GB
+Free Memory: 20.67 GB
+Episode is done, episode time:  90.21201062202454
+----------------------------------------------------------------------------------------
+episode:96, reward: 0.49120220654064184, mean reward: -0.28, score: -9.870714458820146, epsilon: 0.7951630221735385, total steps: 3950
+Total Memory: 23.68 GB
+Allocated Memory: 650.32 MB
+Cached Memory: 1.8 GB
+Free Memory: 20.64 GB
+Episode is done, episode time:  93.15397334098816
+----------------------------------------------------------------------------------------
+episode:97, reward: -0.22485714493494413, mean reward: -0.01, score: -0.22022941810089236, epsilon: 0.7942941722420128, total steps: 3985
+Total Memory: 23.68 GB
+Allocated Memory: 663.51 MB
+Cached Memory: 1.82 GB
+Free Memory: 20.61 GB
+Episode is done, episode time:  90.54336667060852
+----------------------------------------------------------------------------------------
+episode:98, reward: -2.0981790519097103, mean reward: -0.82, score: -28.63221232959752, epsilon: 0.7934263353776698, total steps: 4020
+Total Memory: 23.68 GB
+Allocated Memory: 676.7 MB
+Cached Memory: 1.83 GB
+Free Memory: 20.59 GB
+Episode is done, episode time:  92.3022472858429
+----------------------------------------------------------------------------------------
+episode:99, reward: 0.9369448342695605, mean reward: 0.0, score: 0.07908147861228088, epsilon: 0.7925595103992871, total steps: 4055
+Total Memory: 23.68 GB
+Allocated Memory: 689.9 MB
+Cached Memory: 1.85 GB
+Free Memory: 20.56 GB
+Episode is done, episode time:  92.1494996547699
+----------------------------------------------------------------------------------------
+TEST, reward: 500, score: 542.6744872894101, total steps: 4055
+Test is done, test time:  56.23853349685669
+----------------------------------------------------------------------------------------
+episode:100, reward: -2.8712709574701947, mean reward: -0.42, score: -14.76377773509195, epsilon: 0.7916936961270191, total steps: 4090
+Total Memory: 23.68 GB
+Allocated Memory: 703.09 MB
+Cached Memory: 1.86 GB
+Free Memory: 20.53 GB
+Episode is done, episode time:  90.50972557067871
+----------------------------------------------------------------------------------------
+episode:101, reward: -50, mean reward: -3.43, score: -54.8542864132061, epsilon: 0.7912982316223266, total steps: 4106
+Total Memory: 23.68 GB
+Allocated Memory: 709.12 MB
+Cached Memory: 1.87 GB
+Free Memory: 20.52 GB
+Episode is done, episode time:  169.13012671470642
+Traceback (most recent call last):
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/run.py", line 11, in <module>
+    # ddqn_agent = DDQN_Agent_LSTM(useDepth=False)
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 256, in train
+    next_state, reward, done, _ = self.env.step(action)
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/env.py", line 40, in step
+    self.client.moveByVelocityAsync(
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/msgpackrpc/future.py", line 22, in join
+    self._loop.start()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/msgpackrpc/loop.py", line 22, in start
+    self._ioloop.start()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/tornado/ioloop.py", line 863, in start
+    event_pairs = self._impl.poll(poll_timeout)
+KeyboardInterrupt

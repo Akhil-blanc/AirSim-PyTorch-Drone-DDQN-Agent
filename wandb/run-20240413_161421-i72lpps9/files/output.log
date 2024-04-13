@@ -1,0 +1,57 @@
+Using device: cuda
+NVIDIA RTX A5000
+Starting...
+/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/DQRN_net.py:84: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if x.size(-1) != 84 or x.size(-2) != 84:
+----------------------------------------------------------------------------------------
+Training will start after  486  steps.
+----------------------------------------------------------------------------------------
+Training will start after  474  steps.
+----------------------------------------------------------------------------------------
+Training will start after  439  steps.
+----------------------------------------------------------------------------------------
+Training will start after  404  steps.
+----------------------------------------------------------------------------------------
+Training will start after  374  steps.
+----------------------------------------------------------------------------------------
+Training will start after  339  steps.
+----------------------------------------------------------------------------------------
+Training will start after  323  steps.
+----------------------------------------------------------------------------------------
+Training will start after  288  steps.
+----------------------------------------------------------------------------------------
+Training will start after  253  steps.
+----------------------------------------------------------------------------------------
+Training will start after  234  steps.
+----------------------------------------------------------------------------------------
+Training will start after  199  steps.
+----------------------------------------------------------------------------------------
+Training will start after  164  steps.
+----------------------------------------------------------------------------------------
+Training will start after  149  steps.
+----------------------------------------------------------------------------------------
+Training will start after  114  steps.
+----------------------------------------------------------------------------------------
+Training will start after  101  steps.
+----------------------------------------------------------------------------------------
+Training will start after  66  steps.
+Traceback (most recent call last):
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/run.py", line 11, in <module>
+    ddqn_agent.train()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 268, in train
+    self.memorize_sequence(state_sequence,action,reward,next_state_sequence)  # Upload sequence to memory
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 176, in memorize_sequence
+    current_q = self.policy(state_sequence).squeeze().cpu().detach().numpy()[action]
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/DQRN_net.py", line 111, in forward
+    #print(x.shape)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 878, in forward
+    result = _VF.lstm(input, hx, self._flat_weights, self.bias, self.num_layers,
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 38.00 MiB. GPU 0 has a total capacity of 23.68 GiB of which 39.19 MiB is free. Process 79462 has 21.96 GiB memory in use. Including non-PyTorch memory, this process has 596.00 MiB memory in use. Process 82137 has 492.00 MiB memory in use. Of the allocated memory 308.20 MiB is allocated by PyTorch, and 31.80 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

@@ -61,7 +61,7 @@ class DroneEnv(object):
         """Step"""
         #print("new step ------------------------------")
 
-        self.quad_offset = self.interpret_continuous_action(continuous_action)
+        self.quad_offset = self.interpret_continuous_action(continuous_action.squeeze(0))
         #print("quad_offset: ", self.quad_offset)
 
         quad_vel = self.client.getMultirotorState().kinematics_estimated.linear_velocity
@@ -195,8 +195,8 @@ class DroneEnv(object):
         return self.quad_offset
 
     def interpret_continuous_action(self, continuous_action):
-        scaling_factor = 3
-
+        scaling_factor = 1.2
+        print("continuous_action: ", continuous_action)
         self.quad_offset = (continuous_action[0] * scaling_factor, continuous_action[1] * scaling_factor, continuous_action[2] * scaling_factor)
 
         return self.quad_offset

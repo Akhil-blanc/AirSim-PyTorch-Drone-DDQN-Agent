@@ -16,6 +16,11 @@ from env import DroneEnv
 import time
 from prioritized_memory import Memory
 
+import wandb
+
+# writer = SummaryWriter()
+wandb.init(project="my-project", name="run-name")
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class DDPG_Agent:
@@ -117,13 +122,17 @@ class DDPG_Agent:
         return "%s %s" % (s, size_name[i])
     
     def append_sample(self, state, action, reward, next_state):
-        next_state = self.transformToTensor(next_state)
+        if isinstance(next_state, np.ndarray):
+            next_state = self.transformToTensor(next_state)
+        if isinstance(state, np.ndarray):
+            state = self.transformToTensor(state)
+        action = torch.tensor(action, dtype=torch.float).to(device)
         next_state_actions = self.actor_target(next_state) #mu target given next state
         next_q_values = self.critic_target(next_state, next_state_actions) #Q target given next state and mu target
         expected_q_values = reward + (self.gamma * next_q_values)
         current_q_values = self.critic(state, action)
         error = torch.abs(current_q_values - expected_q_values).detach().cpu().numpy()
-        self.memory.add(error, state, action, reward, next_state)
+        self.memory.add(error, state, action.detach().cpu().numpy(), reward, next_state)
 
     def learn(self):
         if self.memory.tree.n_entries < self.batch_size:
@@ -189,10 +198,10 @@ class DDPG_Agent:
                 state = self.transformToTensor(state)
 
                 # action = self.act(state)
-                action = (torch.tensor(self.actor(state))).squeeze(dim=0)
+                action = (torch.tensor(self.actor(state)))
                 # print(action.squeeze(dim=0))
                 action_noise = OrnsteinUhlenbeckActionNoise(action.shape[0])
-                action = torch.cat((action, (action_noise.sample()).to(device)), dim=0)
+                action = (action + ((action_noise.sample()).unsqueeze(dim=0)).to(device)).detach().cpu().numpy()
                 next_state, reward, done, _ = self.env.continuous_action_step(action)
 
                 if steps == self.max_steps:
@@ -214,6 +223,14 @@ class DDPG_Agent:
                     print(
                         "episode:{0}, reward: {1}, mean reward: {2}, score: {3}, epsilon: {4}, total steps: {5}".format(
                             self.episode, reward, round(score / steps, 2), score, self.eps_threshold, self.steps_done))
+                    wandb.log({
+                        "reward": reward,
+                        "mean_reward": round(score / steps, 2),
+                        "score": score,
+                        "epsilon": self.eps_threshold,
+                        "total_steps": self.steps_done
+                    })
+                    
                     score_history.append(score)
                     reward_history.append(reward)
                     with open('log.txt', 'a') as file:

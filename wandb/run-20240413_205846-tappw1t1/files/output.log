@@ -1,0 +1,53 @@
+Using device: cuda
+NVIDIA RTX A5000
+Save directory:  /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/saved models
+38
+Saved parameters loaded
+Model:  saved models/EPISODE76.pt
+Steps done:  2748
+Episode:  76
+Starting...
+/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/DQRN_net.py:85: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if x.size(-1) != 84 or x.size(-2) != 84:
+----------------------------------------------------------------------------------------
+Training will start after  221  steps.
+----------------------------------------------------------------------------------------
+Training will start after  186  steps.
+----------------------------------------------------------------------------------------
+Training will start after  151  steps.
+----------------------------------------------------------------------------------------
+Training will start after  116  steps.
+----------------------------------------------------------------------------------------
+Training will start after  81  steps.
+----------------------------------------------------------------------------------------
+Training will start after  46  steps.
+----------------------------------------------------------------------------------------
+Training will start after  11  steps.
+----------------------------------------------------------------------------------------
+episode:76, reward: 0.8852921539292211, mean reward: -0.46, score: -15.948007315631564, epsilon: 0.8184199161026232, total steps: 3028
+Total Memory: 23.68 GB
+Allocated Memory: 408.31 MB
+Cached Memory: 1.55 GB
+Free Memory: 21.14 GB
+Episode is done, episode time:  88.11023283004761
+----------------------------------------------------------------------------------------
+episode:77, reward: -50, mean reward: -5.29, score: -47.61380242668356, epsilon: 0.8181894247032311, total steps: 3037
+Total Memory: 23.68 GB
+Allocated Memory: 411.71 MB
+Cached Memory: 1.55 GB
+Free Memory: 21.13 GB
+Episode is done, episode time:  119.70732760429382
+Traceback (most recent call last):
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/run.py", line 11, in <module>
+    ddqn_agent.train()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 256, in train
+    next_state, reward, done, _ = self.env.step(action)
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/env.py", line 53, in step
+    self.client.moveToPositionAsync(quad_state.x_val, quad_state.y_val, -7, 1).join()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/msgpackrpc/future.py", line 22, in join
+    self._loop.start()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/msgpackrpc/loop.py", line 22, in start
+    self._ioloop.start()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/tornado/ioloop.py", line 863, in start
+    event_pairs = self._impl.poll(poll_timeout)
+KeyboardInterrupt

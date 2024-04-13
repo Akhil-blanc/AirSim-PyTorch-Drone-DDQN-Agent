@@ -11,6 +11,7 @@ class SumTree:
         self.tree = numpy.zeros(2 * capacity - 1)
         self.states = numpy.zeros(capacity, dtype=object)
         self.actions = numpy.zeros(capacity, dtype=object)
+        self.continuous_actions = numpy.array([])
         self.rewards = numpy.zeros(capacity, dtype=object)
         self.next_states = numpy.zeros(capacity, dtype=object)
         self.n_entries = 0
@@ -57,10 +58,26 @@ class SumTree:
         if self.n_entries < self.capacity:
             self.n_entries += 1
 
+    def continuous_action_add(self, p, state, action, reward, next_state):
+        idx = self.write + self.capacity - 1
+
+        self.states[self.write] = state
+        self.continuous_actions = numpy.append(self.continuous_actions, action)
+        self.rewards[self.write] = reward
+        self.next_states[self.write] = next_state
+        self.update(idx, p)
+
+        self.write += 1
+        if self.write >= self.capacity:
+            self.write = 0
+
+        if self.n_entries < self.capacity:
+            self.n_entries += 1
+
     # update priority
     def update(self, idx, p):
         change = p - self.tree[idx]
-
+        # print(p, self.tree[idx])
         self.tree[idx] = p
         self._propagate(idx, change)
 

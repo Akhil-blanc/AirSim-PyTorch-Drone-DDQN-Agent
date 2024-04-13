@@ -1,0 +1,267 @@
+2024-04-13 16:29:12,287 INFO    StreamThr :80319 [internal.py:wandb_internal():86] W&B internal server running at pid: 80319, started at: 2024-04-13 16:29:12.286553
+2024-04-13 16:29:12,289 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status
+2024-04-13 16:29:12,290 INFO    WriterThread:80319 [datastore.py:open_for_write():87] open: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/run-hchcmtb0.wandb
+2024-04-13 16:29:12,292 DEBUG   SenderThread:80319 [sender.py:send():379] send: header
+2024-04-13 16:29:12,301 DEBUG   SenderThread:80319 [sender.py:send():379] send: run
+2024-04-13 16:29:13,032 INFO    SenderThread:80319 [dir_watcher.py:__init__():211] watching files in: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files
+2024-04-13 16:29:13,032 INFO    SenderThread:80319 [sender.py:_start_run_threads():1124] run started: hchcmtb0 with start time 1713005952.286357
+2024-04-13 16:29:13,041 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: check_version
+2024-04-13 16:29:13,041 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: check_version
+2024-04-13 16:29:13,234 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: run_start
+2024-04-13 16:29:13,240 DEBUG   HandlerThread:80319 [system_info.py:__init__():26] System info init
+2024-04-13 16:29:13,240 DEBUG   HandlerThread:80319 [system_info.py:__init__():41] System info init done
+2024-04-13 16:29:13,240 INFO    HandlerThread:80319 [system_monitor.py:start():194] Starting system monitor
+2024-04-13 16:29:13,241 INFO    SystemMonitor:80319 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-13 16:29:13,241 INFO    HandlerThread:80319 [system_monitor.py:probe():214] Collecting system info
+2024-04-13 16:29:13,242 INFO    SystemMonitor:80319 [interfaces.py:start():190] Started cpu monitoring
+2024-04-13 16:29:13,242 INFO    SystemMonitor:80319 [interfaces.py:start():190] Started disk monitoring
+2024-04-13 16:29:13,243 INFO    SystemMonitor:80319 [interfaces.py:start():190] Started gpu monitoring
+2024-04-13 16:29:13,244 INFO    SystemMonitor:80319 [interfaces.py:start():190] Started memory monitoring
+2024-04-13 16:29:13,245 INFO    SystemMonitor:80319 [interfaces.py:start():190] Started network monitoring
+2024-04-13 16:29:13,263 DEBUG   HandlerThread:80319 [system_info.py:probe():150] Probing system
+2024-04-13 16:29:13,269 DEBUG   HandlerThread:80319 [system_info.py:_probe_git():135] Probing git
+2024-04-13 16:29:13,280 DEBUG   HandlerThread:80319 [system_info.py:_probe_git():143] Probing git done
+2024-04-13 16:29:13,280 DEBUG   HandlerThread:80319 [system_info.py:probe():198] Probing system done
+2024-04-13 16:29:13,280 DEBUG   HandlerThread:80319 [system_monitor.py:probe():223] {'os': 'Linux-6.4.6-76060406-generic-x86_64-with-glibc2.35', 'python': '3.9.12', 'heartbeatAt': '2024-04-13T10:59:13.263423', 'startedAt': '2024-04-13T10:59:12.282496', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/run.py', 'codePathLocal': 'run.py', 'codePath': 'run.py', 'git': {'remote': 'https://github.com/PT-10/AirSim-PyTorch-Drone-DDQN-Agent.git', 'commit': 'ef5b63fb4f3ef8ac19aef902511a5a635ef06768'}, 'email': 'goyal.shubh0711@gmail.com', 'root': '/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent', 'host': 'linux-ws1', 'username': 'raid', 'executable': '/home/raid/miniconda3/envs/airsim_env/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2396.8037187500004, 'min': 1500.0, 'max': 2800.0}, 'cpu_freq_per_core': [{'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3549.885, 'min': 1500.0, 'max': 2800.0}, {'current': 3381.405, 'min': 1500.0, 'max': 2800.0}, {'current': 3307.979, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.066, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1499.915, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2831.157, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3547.757, 'min': 1500.0, 'max': 2800.0}, {'current': 3549.88, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.543, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.241, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.367, 'min': 1500.0, 'max': 2800.0}, {'current': 2100.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3549.889, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2705.439, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2127.412, 'min': 1500.0, 'max': 2800.0}, {'current': 2056.263, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.735, 'min': 1500.0, 'max': 2800.0}, {'current': 3549.309, 'min': 1500.0, 'max': 2800.0}, {'current': 3549.926, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.637, 'min': 1500.0, 'max': 2800.0}, {'current': 3549.193, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2838.88, 'min': 1500.0, 'max': 2800.0}, {'current': 3549.87, 'min': 1500.0, 'max': 2800.0}, {'current': 3197.375, 'min': 1500.0, 'max': 2800.0}, {'current': 3260.155, 'min': 1500.0, 'max': 2800.0}, {'current': 2837.591, 'min': 1500.0, 'max': 2800.0}, {'current': 2398.226, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2396.531, 'min': 1500.0, 'max': 2800.0}, {'current': 1962.343, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2820.945, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3549.885, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.911, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.745, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.293, 'min': 1500.0, 'max': 2800.0}, {'current': 2839.918, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2845.804, 'min': 1500.0, 'max': 2800.0}, {'current': 2100.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1503.442, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2011.274, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2838.994, 'min': 1500.0, 'max': 2800.0}, {'current': 3550.91, 'min': 1500.0, 'max': 2800.0}, {'current': 3549.208, 'min': 1500.0, 'max': 2800.0}, {'current': 2844.883, 'min': 1500.0, 'max': 2800.0}], 'disk': {'/': {'total': 358.9551429748535, 'used': 188.65026092529297}}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}], 'memory': {'total': 125.63850784301758}}
+2024-04-13 16:29:13,280 INFO    HandlerThread:80319 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-13 16:29:13,280 INFO    HandlerThread:80319 [system_monitor.py:probe():227] Publishing system info
+2024-04-13 16:29:13,280 DEBUG   HandlerThread:80319 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-13 16:29:14,036 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_created():271] file/dir created: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/conda-environment.yaml
+2024-04-13 16:29:14,655 DEBUG   HandlerThread:80319 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-13 16:29:14,656 INFO    HandlerThread:80319 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-13 16:29:14,663 DEBUG   SenderThread:80319 [sender.py:send():379] send: files
+2024-04-13 16:29:14,663 INFO    SenderThread:80319 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-13 16:29:14,703 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-13 16:29:14,704 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: python_packages
+2024-04-13 16:29:14,704 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:29:14,704 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:29:14,706 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:29:15,033 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/conda-environment.yaml
+2024-04-13 16:29:15,034 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_created():271] file/dir created: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/wandb-metadata.json
+2024-04-13 16:29:15,034 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_created():271] file/dir created: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/requirements.txt
+2024-04-13 16:29:15,113 DEBUG   SenderThread:80319 [sender.py:send():379] send: telemetry
+2024-04-13 16:29:15,903 INFO    wandb-upload_0:80319 [upload_job.py:push():131] Uploaded file /tmp/tmpeouc__hawandb/hghng6ew-wandb-metadata.json
+2024-04-13 16:29:16,034 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_created():271] file/dir created: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:29:17,423 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:29:18,034 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:29:20,035 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:29:22,688 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:29:27,689 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:29:29,704 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:29:29,704 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:29:29,706 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:29:33,052 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:29:34,038 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:29:38,052 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:29:43,056 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:29:44,041 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/config.yaml
+2024-04-13 16:29:44,704 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:29:44,705 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:29:44,707 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:29:46,041 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:29:49,066 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:29:54,066 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:29:58,044 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:29:59,704 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:29:59,705 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:29:59,707 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:30:00,035 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:05,036 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:10,036 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:12,048 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:30:13,245 DEBUG   SystemMonitor:80319 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-13 16:30:13,247 DEBUG   SenderThread:80319 [sender.py:send():379] send: stats
+2024-04-13 16:30:14,704 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:30:14,705 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:30:14,705 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:30:16,014 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:21,015 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:26,016 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:29,704 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:30:29,705 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:30:29,707 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:30:30,052 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:30:31,127 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:36,128 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:41,836 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:42,056 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:30:43,248 DEBUG   SenderThread:80319 [sender.py:send():379] send: stats
+2024-04-13 16:30:44,704 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:30:44,705 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:30:44,708 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:30:47,118 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:52,119 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:54,058 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:30:58,069 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:30:59,704 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:30:59,705 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:30:59,708 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:31:04,062 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:31:08,062 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:09,440 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:31:13,250 DEBUG   SenderThread:80319 [sender.py:send():379] send: stats
+2024-04-13 16:31:14,704 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:31:14,705 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:31:14,708 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:31:15,078 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:31:20,078 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:31:22,065 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:24,066 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:25,596 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:31:26,067 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:28,067 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:29,705 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-13 16:31:29,705 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: stop_status
+2024-04-13 16:31:29,707 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:31:30,068 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:31,023 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:31:32,069 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:33,313 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-13 16:31:33,316 DEBUG   SenderThread:80319 [sender.py:send():379] send: history
+2024-04-13 16:31:33,316 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: summary_record
+2024-04-13 16:31:33,319 INFO    SenderThread:80319 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-13 16:31:34,069 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:34,070 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_created():271] file/dir created: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/wandb-summary.json
+2024-04-13 16:31:34,512 DEBUG   SenderThread:80319 [sender.py:send():379] send: exit
+2024-04-13 16:31:34,512 INFO    SenderThread:80319 [sender.py:send_exit():586] handling exit code: 1
+2024-04-13 16:31:34,512 INFO    SenderThread:80319 [sender.py:send_exit():588] handling runtime: 141
+2024-04-13 16:31:34,512 INFO    SenderThread:80319 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-13 16:31:34,513 INFO    SenderThread:80319 [sender.py:send_exit():594] send defer
+2024-04-13 16:31:34,513 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:34,513 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-13 16:31:34,513 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:34,513 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-13 16:31:34,514 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 1
+2024-04-13 16:31:34,514 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:34,514 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-13 16:31:34,514 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:34,514 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-13 16:31:34,514 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 2
+2024-04-13 16:31:34,514 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:34,514 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-13 16:31:34,514 INFO    HandlerThread:80319 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-13 16:31:34,515 DEBUG   SystemMonitor:80319 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-13 16:31:34,516 INFO    HandlerThread:80319 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-13 16:31:34,516 DEBUG   SystemMonitor:80319 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-13 16:31:34,516 INFO    HandlerThread:80319 [interfaces.py:finish():202] Joined disk monitor
+2024-04-13 16:31:34,643 INFO    HandlerThread:80319 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-13 16:31:34,643 INFO    HandlerThread:80319 [interfaces.py:finish():202] Joined memory monitor
+2024-04-13 16:31:34,643 INFO    HandlerThread:80319 [interfaces.py:finish():202] Joined network monitor
+2024-04-13 16:31:34,644 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:34,644 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-13 16:31:34,644 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 3
+2024-04-13 16:31:34,644 DEBUG   SenderThread:80319 [sender.py:send():379] send: stats
+2024-04-13 16:31:34,645 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:34,645 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-13 16:31:34,645 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:34,645 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-13 16:31:34,646 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 4
+2024-04-13 16:31:34,646 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:34,646 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-13 16:31:34,646 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:34,646 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-13 16:31:34,646 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 5
+2024-04-13 16:31:34,646 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:34,646 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-13 16:31:34,647 DEBUG   SenderThread:80319 [sender.py:send():379] send: summary
+2024-04-13 16:31:34,647 INFO    SenderThread:80319 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-13 16:31:34,647 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:34,648 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-13 16:31:34,648 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 6
+2024-04-13 16:31:34,648 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:34,648 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-13 16:31:34,648 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:34,648 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-13 16:31:34,648 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 7
+2024-04-13 16:31:34,648 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 16:31:34,649 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:34,649 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-13 16:31:34,649 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:34,649 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-13 16:31:35,070 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/wandb-summary.json
+2024-04-13 16:31:35,512 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-13 16:31:36,102 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 8
+2024-04-13 16:31:36,103 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: poll_exit
+2024-04-13 16:31:36,103 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:36,103 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-13 16:31:36,104 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:36,104 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-13 16:31:36,104 INFO    SenderThread:80319 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-13 16:31:36,104 INFO    SenderThread:80319 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-13 16:31:36,123 INFO    SenderThread:80319 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-13 16:31:36,129 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 9
+2024-04-13 16:31:36,130 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:36,130 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-13 16:31:36,130 DEBUG   SenderThread:80319 [sender.py:send():379] send: artifact
+2024-04-13 16:31:36,513 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-13 16:31:37,070 INFO    Thread-12 :80319 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:37,713 INFO    SenderThread:80319 [sender.py:send_artifact():1468] sent artifact job-https___github.com_PT-10_AirSim-PyTorch-Drone-DDQN-Agent.git_run.py - {'id': 'QXJ0aWZhY3Q6Nzk1MDkwMjMx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2MjE5Nzg0Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Nzk1MDkwMjMx', 'versionIndex': 1}}}
+2024-04-13 16:31:37,713 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:37,713 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-13 16:31:37,713 INFO    SenderThread:80319 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-13 16:31:38,071 INFO    SenderThread:80319 [dir_watcher.py:finish():388] scan: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files
+2024-04-13 16:31:38,071 INFO    SenderThread:80319 [dir_watcher.py:finish():402] scan save: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/requirements.txt requirements.txt
+2024-04-13 16:31:38,072 INFO    SenderThread:80319 [dir_watcher.py:finish():402] scan save: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/wandb-metadata.json wandb-metadata.json
+2024-04-13 16:31:38,072 INFO    SenderThread:80319 [dir_watcher.py:finish():402] scan save: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log output.log
+2024-04-13 16:31:38,072 INFO    SenderThread:80319 [dir_watcher.py:finish():402] scan save: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/wandb-summary.json wandb-summary.json
+2024-04-13 16:31:38,072 INFO    SenderThread:80319 [dir_watcher.py:finish():402] scan save: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/conda-environment.yaml conda-environment.yaml
+2024-04-13 16:31:38,072 INFO    SenderThread:80319 [dir_watcher.py:finish():402] scan save: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/config.yaml config.yaml
+2024-04-13 16:31:38,072 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 10
+2024-04-13 16:31:38,073 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: poll_exit
+2024-04-13 16:31:38,074 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:38,084 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-13 16:31:38,084 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:38,084 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-13 16:31:38,084 INFO    SenderThread:80319 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-13 16:31:38,514 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-13 16:31:38,514 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: poll_exit
+2024-04-13 16:31:38,853 INFO    wandb-upload_2:80319 [upload_job.py:push():131] Uploaded file /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/wandb-summary.json
+2024-04-13 16:31:38,899 INFO    wandb-upload_1:80319 [upload_job.py:push():131] Uploaded file /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/output.log
+2024-04-13 16:31:38,974 INFO    wandb-upload_4:80319 [upload_job.py:push():131] Uploaded file /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/config.yaml
+2024-04-13 16:31:39,015 INFO    wandb-upload_0:80319 [upload_job.py:push():131] Uploaded file /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/requirements.txt
+2024-04-13 16:31:39,074 INFO    wandb-upload_3:80319 [upload_job.py:push():131] Uploaded file /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/files/conda-environment.yaml
+2024-04-13 16:31:39,275 INFO    Thread-11 :80319 [sender.py:transition_state():614] send defer: 11
+2024-04-13 16:31:39,275 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:39,275 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-13 16:31:39,275 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:39,276 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-13 16:31:39,276 INFO    SenderThread:80319 [file_pusher.py:join():178] waiting for file pusher
+2024-04-13 16:31:39,276 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 12
+2024-04-13 16:31:39,276 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:39,276 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-13 16:31:39,276 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:39,276 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-13 16:31:39,276 INFO    SenderThread:80319 [file_stream.py:finish():614] file stream finish called
+2024-04-13 16:31:39,516 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-13 16:31:40,209 INFO    SenderThread:80319 [file_stream.py:finish():618] file stream finish is done
+2024-04-13 16:31:40,209 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 13
+2024-04-13 16:31:40,210 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: poll_exit
+2024-04-13 16:31:40,210 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:40,210 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-13 16:31:40,211 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:40,211 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-13 16:31:40,211 INFO    SenderThread:80319 [sender.py:transition_state():614] send defer: 14
+2024-04-13 16:31:40,211 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: defer
+2024-04-13 16:31:40,211 INFO    HandlerThread:80319 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-13 16:31:40,211 DEBUG   SenderThread:80319 [sender.py:send():379] send: final
+2024-04-13 16:31:40,211 DEBUG   SenderThread:80319 [sender.py:send():379] send: footer
+2024-04-13 16:31:40,211 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: defer
+2024-04-13 16:31:40,211 INFO    SenderThread:80319 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-13 16:31:40,212 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-13 16:31:40,213 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: poll_exit
+2024-04-13 16:31:40,213 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-13 16:31:40,214 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: poll_exit
+2024-04-13 16:31:40,214 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: server_info
+2024-04-13 16:31:40,215 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-13 16:31:40,215 DEBUG   SenderThread:80319 [sender.py:send_request():406] send_request: server_info
+2024-04-13 16:31:40,218 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-13 16:31:40,219 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-13 16:31:40,541 INFO    MainThread:80319 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-13 16:31:40,542 INFO    MainThread:80319 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-13 16:31:40,542 INFO    MainThread:80319 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-13 16:31:40,543 DEBUG   HandlerThread:80319 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-13 16:31:40,543 INFO    HandlerThread:80319 [handler.py:finish():866] shutting down handler
+2024-04-13 16:31:41,215 INFO    WriterThread:80319 [datastore.py:close():296] close: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_162912-hchcmtb0/run-hchcmtb0.wandb
+2024-04-13 16:31:41,541 INFO    SenderThread:80319 [sender.py:finish():1546] shutting down sender
+2024-04-13 16:31:41,542 INFO    SenderThread:80319 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-13 16:31:41,542 INFO    SenderThread:80319 [file_pusher.py:join():178] waiting for file pusher

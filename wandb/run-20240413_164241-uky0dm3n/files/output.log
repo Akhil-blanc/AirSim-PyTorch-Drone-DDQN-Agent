@@ -1,0 +1,25 @@
+Using device: cuda
+NVIDIA RTX A5000
+Starting...
+/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/DQRN_net.py:85: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if x.size(-1) != 84 or x.size(-2) != 84:
+torch.Size([16, 7, 1, 84, 84])
+torch.Size([16, 7, 1, 84, 84])
+torch.Size([16, 7, 1, 84, 84])
+torch.Size([16, 7, 1, 84, 84])
+----------------------------------------------------------------------------------------
+episode:1, reward: -1.4647393871609893, mean reward: -1.56, score: -26.455329811816682, epsilon: 0.899546787534067, total steps: 17
+Total Memory: 23.68 GB
+Allocated Memory: 310.33 MB
+Cached Memory: 458.0 MB
+Free Memory: 22.86 GB
+Episode is done, episode time:  45.47317337989807
+torch.Size([1, 7, 1, 84, 84])
+Traceback (most recent call last):
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/run.py", line 11, in <module>
+    ddqn_agent.train()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 340, in train
+    self.test()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 372, in test
+    state_sequence.append(state)
+AttributeError: 'Tensor' object has no attribute 'append'

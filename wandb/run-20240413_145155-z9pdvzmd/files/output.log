@@ -1,0 +1,21 @@
+Using device: cuda
+NVIDIA RTX A5000
+Starting...
+torch.Size([16, 7, 1, 84, 84])
+torch.Size([16, 7, 1, 84, 84])
+Traceback (most recent call last):
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/run.py", line 11, in <module>
+    ddqn_agent.train()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 263, in train
+    self.learn()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 206, in learn
+    current_q = self.policy(states).gather(1, torch.tensor(actions).unsqueeze(1).to(device)).squeeze(1)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/DQRN_net.py", line 84, in forward
+    x = F.interpolate(x, size=(x.size(2),84, 84))
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/functional.py", line 3934, in interpolate
+    raise ValueError(
+ValueError: Input and output must have the same number of spatial dimensions, but got input with spatial dimensions of [7, 1, 84, 84] and output size of (7, 84, 84). Please provide input tensor in (N, C, d1, d2, ...,dK) format and output size in (o1, o2, ...,oK) format.

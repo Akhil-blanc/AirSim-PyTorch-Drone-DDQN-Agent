@@ -1,0 +1,90 @@
+2024-04-13 17:44:37,675 INFO    StreamThr :86627 [internal.py:wandb_internal():86] W&B internal server running at pid: 86627, started at: 2024-04-13 17:44:37.674456
+2024-04-13 17:44:37,676 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: status
+2024-04-13 17:44:37,677 INFO    WriterThread:86627 [datastore.py:open_for_write():87] open: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_174437-aa29tckq/run-aa29tckq.wandb
+2024-04-13 17:44:37,679 DEBUG   SenderThread:86627 [sender.py:send():379] send: header
+2024-04-13 17:44:37,694 DEBUG   SenderThread:86627 [sender.py:send():379] send: run
+2024-04-13 17:44:42,695 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:44:47,696 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:44:52,697 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:44:57,698 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:02,699 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:07,700 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:12,701 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:17,702 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:22,416 INFO    SenderThread:86627 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fc2c17c32e0>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc2c17c32e0>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc2c17c32e0>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)"))
+2024-04-13 17:45:22,703 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:27,704 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:32,705 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:37,706 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:42,707 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:47,708 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:52,709 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:45:57,710 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:46:02,711 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-13 17:46:07,712 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: cancel
+2024-04-13 17:46:07,712 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: cancel
+2024-04-13 17:46:07,712 DEBUG   SenderThread:86627 [sender.py:send():388] Record cancelled: run
+2024-04-13 17:46:07,713 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: status_report
+2024-04-13 17:46:09,721 DEBUG   HandlerThread:86627 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-13 17:46:09,721 INFO    HandlerThread:86627 [handler.py:finish():866] shutting down handler
+2024-04-13 17:46:10,713 INFO    SenderThread:86627 [sender.py:finish():1546] shutting down sender
+2024-04-13 17:46:10,713 INFO    WriterThread:86627 [datastore.py:close():296] close: /home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/wandb/run-20240413_174437-aa29tckq/run-aa29tckq.wandb

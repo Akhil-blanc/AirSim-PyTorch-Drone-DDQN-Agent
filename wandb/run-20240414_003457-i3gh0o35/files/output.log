@@ -1,0 +1,67 @@
+Using device: cuda
+NVIDIA RTX A5000
+Starting...
+/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddpg_agent.py:201: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  action = (torch.tensor(self.actor(state)))
+----------------------------------------------------------------------------------------
+Training will start after  507  steps.
+----------------------------------------------------------------------------------------
+Training will start after  503  steps.
+----------------------------------------------------------------------------------------
+Training will start after  497  steps.
+----------------------------------------------------------------------------------------
+Training will start after  481  steps.
+----------------------------------------------------------------------------------------
+Training will start after  446  steps.
+----------------------------------------------------------------------------------------
+Training will start after  411  steps.
+----------------------------------------------------------------------------------------
+Training will start after  382  steps.
+----------------------------------------------------------------------------------------
+Training will start after  347  steps.
+----------------------------------------------------------------------------------------
+Training will start after  312  steps.
+----------------------------------------------------------------------------------------
+Training will start after  277  steps.
+----------------------------------------------------------------------------------------
+Training will start after  242  steps.
+----------------------------------------------------------------------------------------
+Training will start after  207  steps.
+----------------------------------------------------------------------------------------
+Training will start after  196  steps.
+----------------------------------------------------------------------------------------
+Training will start after  161  steps.
+----------------------------------------------------------------------------------------
+Training will start after  147  steps.
+----------------------------------------------------------------------------------------
+Training will start after  127  steps.
+----------------------------------------------------------------------------------------
+Training will start after  92  steps.
+----------------------------------------------------------------------------------------
+Training will start after  57  steps.
+----------------------------------------------------------------------------------------
+Training will start after  22  steps.
+/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddpg_agent.py:147: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  actions = torch.tensor(actions, dtype=torch.float).to(device)
+Traceback (most recent call last):
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/run.py", line 14, in <module>
+    ddpg_agent.train()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddpg_agent.py", line 212, in train
+    self.learn()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddpg_agent.py", line 152, in learn
+    next_state_actions = self.actor_target(next_states) #mu target given next state
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddpg_models.py", line 16, in forward
+    x = F.relu(self.conv1(x))
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [84, 1, 4, 4], expected input[1, 512, 84, 84] to have 1 channels, but got 512 channels instead

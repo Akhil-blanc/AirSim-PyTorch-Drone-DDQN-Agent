@@ -23,26 +23,31 @@ class DDPG_Actor(nn.Module):
 class DDPG_Critic(nn.Module):
         def __init__(self):
             super(DDPG_Critic, self).__init__()
-            self.conv1 = nn.Conv2d(in_channels=1, out_channels=84, kernel_size=4, stride=4)
-            self.conv2 = nn.Conv2d(84, 42, kernel_size=4, stride=2)
-            self.conv3 = nn.Conv2d(42, 21, kernel_size=2, stride=2)
-            self.fc4 = nn.Linear(21*4*4, 168)
+            self.conv1 = nn.Conv2d(in_channels=1, out_channels=32, kernel_size=8, stride=4) #84x84x3 -> 20x20x32
+            self.conv2 = nn.Conv2d(32, 64, kernel_size=4, stride=2) #20x20x32 -> 9x9x64
+            self.conv3 = nn.Conv2d(64, 64, kernel_size=3, stride=1) #9x9x64 -> 7x7x64
+            self.conv4 = nn.Conv2d(64, 64, kernel_size=3, stride=1) #7x7x64 -> 5x5x64
+            self.fc4 = nn.Linear(5*5*64, 168)
 
             self.fc5 = nn.Linear(3, 168)
             self.fc6 = nn.Linear(168*2, 84)
-            self.fc7 = nn.Linear(84, 3)           
+            self.fc7 = nn.Linear(84, 3)   
+            self.fc8 = nn.Linear(3, 1)        
 
         def forward(self, state, action):
             x = F.relu(self.conv1(state))
             x = F.relu(self.conv2(x))
             x = F.relu(self.conv3(x))
+            x = F.relu(self.conv4(x))
             x = x.view(x.size(0), -1)
             x = F.relu(self.fc4(x))
             action = F.relu(self.fc5(action))
+            # print(x.shape, action.shape)
             x = torch.cat([x, action], dim=1)
             x = x.view(x.size(0), -1)
             x = F.relu(self.fc6(x))
-            return self.fc7(x)
+            x = self.fc7(x)
+            return self.fc8(x)
             
 class OrnsteinUhlenbeckActionNoise():
     def __init__(self, action_dim, mu=0, theta=0.15, sigma=0.2, dt=1e-2):

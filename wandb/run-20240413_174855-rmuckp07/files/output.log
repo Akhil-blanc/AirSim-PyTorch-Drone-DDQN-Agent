@@ -1,0 +1,588 @@
+Using device: cuda
+NVIDIA RTX A5000
+Starting...
+/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/DQRN_net.py:85: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if x.size(-1) != 84 or x.size(-2) != 84:
+----------------------------------------------------------------------------------------
+Training will start after  232  steps.
+----------------------------------------------------------------------------------------
+Training will start after  202  steps.
+----------------------------------------------------------------------------------------
+Training will start after  167  steps.
+----------------------------------------------------------------------------------------
+Training will start after  132  steps.
+----------------------------------------------------------------------------------------
+Training will start after  97  steps.
+----------------------------------------------------------------------------------------
+Training will start after  62  steps.
+----------------------------------------------------------------------------------------
+Training will start after  40  steps.
+----------------------------------------------------------------------------------------
+Training will start after  5  steps.
+----------------------------------------------------------------------------------------
+episode:1, reward: -3.0125536537386353, mean reward: -1.25, score: -43.92371023865272, epsilon: 0.8919632350764655, total steps: 286
+Total Memory: 23.68 GB
+Allocated Memory: 410.14 MB
+Cached Memory: 1.54 GB
+Free Memory: 21.14 GB
+Episode is done, episode time:  88.8303861618042
+----------------------------------------------------------------------------------------
+episode:2, reward: -1.765564032204395, mean reward: -1.17, score: -40.882831806300345, epsilon: 0.8909815174155307, total steps: 321
+Total Memory: 23.68 GB
+Allocated Memory: 423.35 MB
+Cached Memory: 1.56 GB
+Free Memory: 21.11 GB
+Episode is done, episode time:  89.43459558486938
+----------------------------------------------------------------------------------------
+episode:3, reward: -1.8413302324985779, mean reward: -0.83, score: -29.209379803195674, epsilon: 0.8900009444240133, total steps: 356
+Total Memory: 23.68 GB
+Allocated Memory: 436.52 MB
+Cached Memory: 1.57 GB
+Free Memory: 21.08 GB
+Episode is done, episode time:  90.43736100196838
+----------------------------------------------------------------------------------------
+episode:4, reward: -2.25784984955785, mean reward: -0.57, score: -20.050673468808817, epsilon: 0.8890215147672444, total steps: 391
+Total Memory: 23.68 GB
+Allocated Memory: 449.73 MB
+Cached Memory: 1.59 GB
+Free Memory: 21.05 GB
+Episode is done, episode time:  88.69596862792969
+----------------------------------------------------------------------------------------
+episode:5, reward: -50, mean reward: -2.09, score: -71.06405456542757, epsilon: 0.8880711623519332, total steps: 425
+Total Memory: 23.68 GB
+Allocated Memory: 462.55 MB
+Cached Memory: 1.6 GB
+Free Memory: 21.03 GB
+Episode is done, episode time:  90.05903959274292
+----------------------------------------------------------------------------------------
+episode:6, reward: 2.7082435991050176, mean reward: -0.7, score: -24.631036764543765, epsilon: 0.8870939827947684, total steps: 460
+Total Memory: 23.68 GB
+Allocated Memory: 475.73 MB
+Cached Memory: 1.62 GB
+Free Memory: 21.0 GB
+Episode is done, episode time:  89.2387466430664
+----------------------------------------------------------------------------------------
+episode:7, reward: 2.617414583631458, mean reward: -0.68, score: -23.90094203307629, epsilon: 0.8861179426156539, total steps: 495
+Total Memory: 23.68 GB
+Allocated Memory: 488.94 MB
+Cached Memory: 1.63 GB
+Free Memory: 20.97 GB
+Episode is done, episode time:  90.88720965385437
+----------------------------------------------------------------------------------------
+episode:8, reward: -2.9227772279339064, mean reward: -1.23, score: -42.937050188048815, epsilon: 0.8851430404860905, total steps: 530
+Total Memory: 23.68 GB
+Allocated Memory: 502.11 MB
+Cached Memory: 1.64 GB
+Free Memory: 20.95 GB
+Episode is done, episode time:  91.09438133239746
+----------------------------------------------------------------------------------------
+episode:9, reward: -50, mean reward: -3.09, score: -86.4843049684301, epsilon: 0.8843639372863538, total steps: 558
+Total Memory: 23.68 GB
+Allocated Memory: 512.67 MB
+Cached Memory: 1.65 GB
+Free Memory: 20.93 GB
+Episode is done, episode time:  200.23468017578125
+----------------------------------------------------------------------------------------
+TEST, reward: -4.384998014292023, score: -113.48756864538835, total steps: 558
+Test is done, test time:  194.95076870918274
+----------------------------------------------------------------------------------------
+episode:10, reward: -1.8720720380024574, mean reward: -1.04, score: -36.26420595012702, epsilon: 0.8833910803031071, total steps: 593
+Total Memory: 23.68 GB
+Allocated Memory: 525.88 MB
+Cached Memory: 1.67 GB
+Free Memory: 20.9 GB
+Episode is done, episode time:  89.21593499183655
+----------------------------------------------------------------------------------------
+episode:11, reward: -2.7734969608160185, mean reward: -0.75, score: -26.16783736055558, epsilon: 0.8824193576578484, total steps: 628
+Total Memory: 23.68 GB
+Allocated Memory: 539.06 MB
+Cached Memory: 1.69 GB
+Free Memory: 20.87 GB
+Episode is done, episode time:  88.90721464157104
+----------------------------------------------------------------------------------------
+episode:12, reward: 2.1946284451716878, mean reward: -0.77, score: -26.92734057039253, epsilon: 0.881448768027955, total steps: 663
+Total Memory: 23.68 GB
+Allocated Memory: 552.26 MB
+Cached Memory: 1.7 GB
+Free Memory: 20.84 GB
+Episode is done, episode time:  91.38374853134155
+----------------------------------------------------------------------------------------
+episode:13, reward: -50, mean reward: -3.7, score: -55.48885053418846, epsilon: 0.8810331475577173, total steps: 678
+Total Memory: 23.68 GB
+Allocated Memory: 557.9 MB
+Cached Memory: 1.71 GB
+Free Memory: 20.83 GB
+Episode is done, episode time:  43.13614106178284
+----------------------------------------------------------------------------------------
+episode:14, reward: -1.8548588213196382, mean reward: -0.6, score: -21.140935996244963, epsilon: 0.8800641742299146, total steps: 713
+Total Memory: 23.68 GB
+Allocated Memory: 571.11 MB
+Cached Memory: 1.72 GB
+Free Memory: 20.8 GB
+Episode is done, episode time:  90.46065759658813
+----------------------------------------------------------------------------------------
+episode:15, reward: -1.4245823442702914, mean reward: -0.45, score: -15.59754232781382, epsilon: 0.8790963307118106, total steps: 748
+Total Memory: 23.68 GB
+Allocated Memory: 584.29 MB
+Cached Memory: 1.74 GB
+Free Memory: 20.77 GB
+Episode is done, episode time:  91.23984694480896
+----------------------------------------------------------------------------------------
+episode:16, reward: -2.3244472426978433, mean reward: -1.07, score: -37.363439197367384, epsilon: 0.8781296156860623, total steps: 783
+Total Memory: 23.68 GB
+Allocated Memory: 597.5 MB
+Cached Memory: 1.75 GB
+Free Memory: 20.75 GB
+Episode is done, episode time:  89.31320643424988
+----------------------------------------------------------------------------------------
+episode:17, reward: -50, mean reward: -2.42, score: -67.7956564450965, epsilon: 0.8773570552956863, total steps: 811
+Total Memory: 23.68 GB
+Allocated Memory: 608.05 MB
+Cached Memory: 1.76 GB
+Free Memory: 20.72 GB
+Episode is done, episode time:  71.30170559883118
+----------------------------------------------------------------------------------------
+episode:18, reward: -0.1888526574932925, mean reward: -0.58, score: -20.150840643651946, epsilon: 0.8763923682413768, total steps: 846
+Total Memory: 23.68 GB
+Allocated Memory: 621.23 MB
+Cached Memory: 1.78 GB
+Free Memory: 20.69 GB
+Episode is done, episode time:  89.74508261680603
+----------------------------------------------------------------------------------------
+episode:19, reward: -50, mean reward: -3.81, score: -53.32234560063358, epsilon: 0.8760068084404816, total steps: 860
+Total Memory: 23.68 GB
+Allocated Memory: 626.51 MB
+Cached Memory: 1.79 GB
+Free Memory: 20.68 GB
+Episode is done, episode time:  41.452107429504395
+----------------------------------------------------------------------------------------
+TEST, reward: 500, score: 548.3924559879226, total steps: 860
+Test is done, test time:  44.36323022842407
+----------------------------------------------------------------------------------------
+episode:20, reward: 0.8841856784226536, mean reward: -1.01, score: -35.47007160948837, epsilon: 0.8750436957556091, total steps: 895
+Total Memory: 23.68 GB
+Allocated Memory: 639.72 MB
+Cached Memory: 1.8 GB
+Free Memory: 20.66 GB
+Episode is done, episode time:  92.41073322296143
+----------------------------------------------------------------------------------------
+episode:21, reward: 0.13141083089869454, mean reward: -0.41, score: -14.32667000298283, epsilon: 0.8740817060470055, total steps: 930
+Total Memory: 23.68 GB
+Allocated Memory: 652.9 MB
+Cached Memory: 1.82 GB
+Free Memory: 20.63 GB
+Episode is done, episode time:  91.89145636558533
+----------------------------------------------------------------------------------------
+episode:22, reward: -50, mean reward: -3.77, score: -52.72553223100584, epsilon: 0.8736972243035681, total steps: 944
+Total Memory: 23.68 GB
+Allocated Memory: 658.17 MB
+Cached Memory: 1.82 GB
+Free Memory: 20.62 GB
+Episode is done, episode time:  41.080705881118774
+----------------------------------------------------------------------------------------
+episode:23, reward: 0.29058566248833984, mean reward: -0.61, score: -21.405629605662, epsilon: 0.8727368045623328, total steps: 979
+Total Memory: 23.68 GB
+Allocated Memory: 671.38 MB
+Cached Memory: 1.84 GB
+Free Memory: 20.59 GB
+Episode is done, episode time:  91.32974004745483
+----------------------------------------------------------------------------------------
+episode:24, reward: -50, mean reward: -1.93, score: -65.4991740606347, epsilon: 0.8718048976974674, total steps: 1013
+Total Memory: 23.68 GB
+Allocated Memory: 684.2 MB
+Cached Memory: 1.85 GB
+Free Memory: 20.56 GB
+Episode is done, episode time:  89.7936794757843
+----------------------------------------------------------------------------------------
+episode:25, reward: 1.1525275111022495, mean reward: -0.96, score: -33.657966650874215, epsilon: 0.8708466843832733, total steps: 1048
+Total Memory: 23.68 GB
+Allocated Memory: 697.38 MB
+Cached Memory: 1.87 GB
+Free Memory: 20.53 GB
+Episode is done, episode time:  91.5875313282013
+----------------------------------------------------------------------------------------
+episode:26, reward: -50, mean reward: -2.3, score: -69.03456616643324, epsilon: 0.8700262479854586, total steps: 1078
+Total Memory: 23.68 GB
+Allocated Memory: 708.68 MB
+Cached Memory: 1.88 GB
+Free Memory: 20.51 GB
+Episode is done, episode time:  79.39947819709778
+----------------------------------------------------------------------------------------
+episode:27, reward: 0.10702268677759719, mean reward: -0.55, score: -19.218968684819288, epsilon: 0.8690701085525957, total steps: 1113
+Total Memory: 23.68 GB
+Allocated Memory: 721.89 MB
+Cached Memory: 1.89 GB
+Free Memory: 20.48 GB
+Episode is done, episode time:  91.17161226272583
+----------------------------------------------------------------------------------------
+episode:28, reward: -50, mean reward: -2.01, score: -64.1691929175432, epsilon: 0.8681968995643932, total steps: 1145
+Total Memory: 23.68 GB
+Allocated Memory: 733.96 MB
+Cached Memory: 1.91 GB
+Free Memory: 20.46 GB
+Episode is done, episode time:  84.76868009567261
+----------------------------------------------------------------------------------------
+episode:29, reward: -2.9865500240155853, mean reward: -0.98, score: -34.17148839177153, epsilon: 0.8672428931268656, total steps: 1180
+Total Memory: 23.68 GB
+Allocated Memory: 747.13 MB
+Cached Memory: 1.92 GB
+Free Memory: 20.43 GB
+Episode is done, episode time:  89.80877685546875
+----------------------------------------------------------------------------------------
+TEST, reward: 500, score: 548.7876318086807, total steps: 1180
+Test is done, test time:  44.32923483848572
+----------------------------------------------------------------------------------------
+episode:30, reward: -0.7794871663075327, mean reward: -1.13, score: -39.55969667199393, epsilon: 0.8662899990478466, total steps: 1215
+Total Memory: 23.68 GB
+Allocated Memory: 760.34 MB
+Cached Memory: 1.94 GB
+Free Memory: 20.4 GB
+Episode is done, episode time:  88.34989047050476
+----------------------------------------------------------------------------------------
+episode:31, reward: 2.7671547700136756, mean reward: -0.33, score: -11.44095627735959, epsilon: 0.8653382160303411, total steps: 1250
+Total Memory: 23.68 GB
+Allocated Memory: 773.52 MB
+Cached Memory: 1.96 GB
+Free Memory: 20.37 GB
+Episode is done, episode time:  92.94725966453552
+----------------------------------------------------------------------------------------
+episode:32, reward: 0.03158022841921593, mean reward: -0.65, score: -22.612391701606853, epsilon: 0.8643875427788668, total steps: 1285
+Total Memory: 23.68 GB
+Allocated Memory: 786.73 MB
+Cached Memory: 1.97 GB
+Free Memory: 20.34 GB
+Episode is done, episode time:  91.87030386924744
+----------------------------------------------------------------------------------------
+episode:33, reward: -2.1423866604991346, mean reward: -0.45, score: -15.77353738987238, epsilon: 0.8634379779994513, total steps: 1320
+Total Memory: 23.68 GB
+Allocated Memory: 799.91 MB
+Cached Memory: 1.98 GB
+Free Memory: 20.31 GB
+Episode is done, episode time:  90.99363875389099
+----------------------------------------------------------------------------------------
+episode:34, reward: 0.9048829158185328, mean reward: -0.51, score: -17.75555203693662, epsilon: 0.8624895203996316, total steps: 1355
+Total Memory: 23.68 GB
+Allocated Memory: 813.12 MB
+Cached Memory: 2.0 GB
+Free Memory: 20.29 GB
+Episode is done, episode time:  93.33075404167175
+----------------------------------------------------------------------------------------
+episode:35, reward: -50, mean reward: -2.42, score: -63.03344916006809, epsilon: 0.8617856678621075, total steps: 1381
+Total Memory: 23.68 GB
+Allocated Memory: 822.92 MB
+Cached Memory: 2.01 GB
+Free Memory: 20.27 GB
+Episode is done, episode time:  68.75696015357971
+----------------------------------------------------------------------------------------
+episode:36, reward: -4.714325158021822, mean reward: -0.46, score: -16.033248518844296, epsilon: 0.8608391368333963, total steps: 1416
+Total Memory: 23.68 GB
+Allocated Memory: 836.09 MB
+Cached Memory: 2.03 GB
+Free Memory: 20.24 GB
+Episode is done, episode time:  89.64838361740112
+----------------------------------------------------------------------------------------
+episode:37, reward: -0.822138025854926, mean reward: -0.32, score: -11.301362616450987, epsilon: 0.8598937094469687, total steps: 1451
+Total Memory: 23.68 GB
+Allocated Memory: 849.3 MB
+Cached Memory: 2.04 GB
+Free Memory: 20.21 GB
+Episode is done, episode time:  91.82356977462769
+----------------------------------------------------------------------------------------
+episode:38, reward: -0.9846483180962196, mean reward: -0.98, score: -34.33515870799688, epsilon: 0.8589493844159929, total steps: 1486
+Total Memory: 23.68 GB
+Allocated Memory: 862.48 MB
+Cached Memory: 2.06 GB
+Free Memory: 20.18 GB
+Episode is done, episode time:  91.44606804847717
+----------------------------------------------------------------------------------------
+episode:39, reward: -4.727401017696224, mean reward: -1.07, score: -37.531090363798185, epsilon: 0.8580061604551374, total steps: 1521
+Total Memory: 23.68 GB
+Allocated Memory: 875.69 MB
+Cached Memory: 2.07 GB
+Free Memory: 20.15 GB
+Episode is done, episode time:  92.532062292099
+----------------------------------------------------------------------------------------
+TEST, reward: 500, score: 548.6571658548229, total steps: 1521
+Test is done, test time:  44.3273823261261
+----------------------------------------------------------------------------------------
+episode:40, reward: -2.7368894497620033, mean reward: -0.63, score: -21.880459158741296, epsilon: 0.8570640362805696, total steps: 1556
+Total Memory: 23.68 GB
+Allocated Memory: 888.87 MB
+Cached Memory: 2.09 GB
+Free Memory: 20.12 GB
+Episode is done, episode time:  90.95738792419434
+----------------------------------------------------------------------------------------
+episode:41, reward: 1.0646301738561945, mean reward: -0.63, score: -21.997310912985817, epsilon: 0.8561230106099534, total steps: 1591
+Total Memory: 23.68 GB
+Allocated Memory: 902.08 MB
+Cached Memory: 2.1 GB
+Free Memory: 20.1 GB
+Episode is done, episode time:  209.24947905540466
+----------------------------------------------------------------------------------------
+episode:42, reward: -3.196111200505264, mean reward: -0.57, score: -20.025232996923577, epsilon: 0.8551830821624485, total steps: 1626
+Total Memory: 23.68 GB
+Allocated Memory: 915.25 MB
+Cached Memory: 2.12 GB
+Free Memory: 20.07 GB
+Episode is done, episode time:  91.30941081047058
+----------------------------------------------------------------------------------------
+episode:43, reward: 0.15856040675621585, mean reward: -0.37, score: -13.103506782362636, epsilon: 0.8542442496587074, total steps: 1661
+Total Memory: 23.68 GB
+Allocated Memory: 928.46 MB
+Cached Memory: 2.13 GB
+Free Memory: 20.04 GB
+Episode is done, episode time:  90.88768553733826
+----------------------------------------------------------------------------------------
+episode:44, reward: -1.9972105793499537, mean reward: -0.79, score: -27.649206955090875, epsilon: 0.8533065118208748, total steps: 1696
+Total Memory: 23.68 GB
+Allocated Memory: 941.64 MB
+Cached Memory: 2.15 GB
+Free Memory: 20.01 GB
+Episode is done, episode time:  90.90124368667603
+----------------------------------------------------------------------------------------
+episode:45, reward: 1.2168086593261336, mean reward: -0.82, score: -28.69034606561621, epsilon: 0.852369867372585, total steps: 1731
+Total Memory: 23.68 GB
+Allocated Memory: 954.85 MB
+Cached Memory: 2.16 GB
+Free Memory: 19.99 GB
+Episode is done, episode time:  92.80598974227905
+----------------------------------------------------------------------------------------
+episode:46, reward: -0.063342178053027, mean reward: -0.33, score: -11.689992009410233, epsilon: 0.8514343150389609, total steps: 1766
+Total Memory: 23.68 GB
+Allocated Memory: 968.03 MB
+Cached Memory: 2.18 GB
+Free Memory: 19.96 GB
+Episode is done, episode time:  90.35131573677063
+----------------------------------------------------------------------------------------
+episode:47, reward: 0.45711053369976185, mean reward: -0.27, score: -9.412760604836016, epsilon: 0.8504998535466114, total steps: 1801
+Total Memory: 23.68 GB
+Allocated Memory: 981.24 MB
+Cached Memory: 2.19 GB
+Free Memory: 19.93 GB
+Episode is done, episode time:  91.44190859794617
+----------------------------------------------------------------------------------------
+episode:48, reward: -50, mean reward: -1.75, score: -50.61287388114022, epsilon: 0.8497264109123511, total steps: 1830
+Total Memory: 23.68 GB
+Allocated Memory: 992.15 MB
+Cached Memory: 2.21 GB
+Free Memory: 19.9 GB
+Episode is done, episode time:  78.49652075767517
+----------------------------------------------------------------------------------------
+episode:49, reward: 0.660795950595741, mean reward: -0.77, score: -26.91306069986311, epsilon: 0.8487939408129445, total steps: 1865
+Total Memory: 23.68 GB
+Allocated Memory: 1005.36 MB
+Cached Memory: 2.22 GB
+Free Memory: 19.88 GB
+Episode is done, episode time:  88.3459198474884
+----------------------------------------------------------------------------------------
+TEST, reward: 500, score: 548.2462988767659, total steps: 1865
+Test is done, test time:  44.420164585113525
+----------------------------------------------------------------------------------------
+episode:50, reward: 0.008954578592884843, mean reward: -0.06, score: -1.9717282087944596, epsilon: 0.8478625579609692, total steps: 1900
+Total Memory: 23.68 GB
+Allocated Memory: 1018.54 MB
+Cached Memory: 2.24 GB
+Free Memory: 19.85 GB
+Episode is done, episode time:  91.00855588912964
+----------------------------------------------------------------------------------------
+episode:51, reward: -4.632860038629509, mean reward: -0.41, score: -14.348174602047763, epsilon: 0.84693226108871, total steps: 1935
+Total Memory: 23.68 GB
+Allocated Memory: 1.01 GB
+Cached Memory: 2.25 GB
+Free Memory: 19.82 GB
+Episode is done, episode time:  91.08608102798462
+----------------------------------------------------------------------------------------
+episode:52, reward: -2.599192229642952, mean reward: -0.86, score: -29.958741803753682, epsilon: 0.8460030489299293, total steps: 1970
+Total Memory: 23.68 GB
+Allocated Memory: 1.02 GB
+Cached Memory: 2.27 GB
+Free Memory: 19.79 GB
+Episode is done, episode time:  92.13873291015625
+----------------------------------------------------------------------------------------
+episode:53, reward: -50, mean reward: -2.15, score: -70.953298973349, epsilon: 0.8451279269814195, total steps: 2003
+Total Memory: 23.68 GB
+Allocated Memory: 1.03 GB
+Cached Memory: 2.28 GB
+Free Memory: 19.77 GB
+Episode is done, episode time:  87.3871066570282
+----------------------------------------------------------------------------------------
+episode:54, reward: -2.886634602239795, mean reward: -0.8, score: -28.077565097524413, epsilon: 0.844200818651625, total steps: 2038
+Total Memory: 23.68 GB
+Allocated Memory: 1.05 GB
+Cached Memory: 2.3 GB
+Free Memory: 19.74 GB
+Episode is done, episode time:  89.63869714736938
+----------------------------------------------------------------------------------------
+episode:55, reward: -50, mean reward: -2.23, score: -60.343514919117546, epsilon: 0.8434863594696964, total steps: 2065
+Total Memory: 23.68 GB
+Allocated Memory: 1.06 GB
+Cached Memory: 2.31 GB
+Free Memory: 19.72 GB
+Episode is done, episode time:  71.492995262146
+----------------------------------------------------------------------------------------
+episode:56, reward: 2.3839503166199947, mean reward: -0.6, score: -20.9275530831709, epsilon: 0.8425611651852554, total steps: 2100
+Total Memory: 23.68 GB
+Allocated Memory: 1.07 GB
+Cached Memory: 2.32 GB
+Free Memory: 19.69 GB
+Episode is done, episode time:  91.98278498649597
+----------------------------------------------------------------------------------------
+episode:57, reward: 1.266717509447247, mean reward: -0.49, score: -17.26159295554806, epsilon: 0.8416370496647448, total steps: 2135
+Total Memory: 23.68 GB
+Allocated Memory: 1.08 GB
+Cached Memory: 2.34 GB
+Free Memory: 19.66 GB
+Episode is done, episode time:  91.13570523262024
+----------------------------------------------------------------------------------------
+episode:58, reward: 2.4582191504860447, mean reward: -1.07, score: -37.62248710854901, epsilon: 0.8407140116503408, total steps: 2170
+Total Memory: 23.68 GB
+Allocated Memory: 1.09 GB
+Cached Memory: 2.35 GB
+Free Memory: 19.63 GB
+Episode is done, episode time:  92.87679672241211
+----------------------------------------------------------------------------------------
+episode:59, reward: -0.6444292643643479, mean reward: -0.59, score: -20.570813173628082, epsilon: 0.8397920498856858, total steps: 2205
+Total Memory: 23.68 GB
+Allocated Memory: 1.11 GB
+Cached Memory: 2.37 GB
+Free Memory: 19.6 GB
+Episode is done, episode time:  90.355299949646
+----------------------------------------------------------------------------------------
+TEST, reward: 500, score: 548.2484300712399, total steps: 2205
+Test is done, test time:  44.36490797996521
+----------------------------------------------------------------------------------------
+episode:60, reward: 1.436961145160609, mean reward: -0.93, score: -32.67781279711002, epsilon: 0.8388711631158873, total steps: 2240
+Total Memory: 23.68 GB
+Allocated Memory: 1.12 GB
+Cached Memory: 2.38 GB
+Free Memory: 19.58 GB
+Episode is done, episode time:  90.72561025619507
+----------------------------------------------------------------------------------------
+episode:61, reward: -1.0665346128556905, mean reward: -0.84, score: -29.417361558674727, epsilon: 0.837951350087516, total steps: 2275
+Total Memory: 23.68 GB
+Allocated Memory: 1.13 GB
+Cached Memory: 2.4 GB
+Free Memory: 19.55 GB
+Episode is done, episode time:  90.3088366985321
+----------------------------------------------------------------------------------------
+episode:62, reward: -2.024252668254718, mean reward: -0.58, score: -20.47100018145307, epsilon: 0.8370326095486039, total steps: 2310
+Total Memory: 23.68 GB
+Allocated Memory: 1.15 GB
+Cached Memory: 2.41 GB
+Free Memory: 19.52 GB
+Episode is done, episode time:  89.70290017127991
+----------------------------------------------------------------------------------------
+episode:63, reward: -2.8912527047783314, mean reward: -0.59, score: -20.793471920443594, epsilon: 0.836114940248643, total steps: 2345
+Total Memory: 23.68 GB
+Allocated Memory: 1.16 GB
+Cached Memory: 2.43 GB
+Free Memory: 19.49 GB
+Episode is done, episode time:  89.10741782188416
+----------------------------------------------------------------------------------------
+episode:64, reward: -50, mean reward: -1.97, score: -67.12602992743327, epsilon: 0.8352245146528408, total steps: 2379
+Total Memory: 23.68 GB
+Allocated Memory: 1.17 GB
+Cached Memory: 2.44 GB
+Free Memory: 19.47 GB
+Episode is done, episode time:  89.08876943588257
+----------------------------------------------------------------------------------------
+episode:65, reward: -1.5107455752558039, mean reward: -0.38, score: -13.266475995442384, epsilon: 0.8343089535668942, total steps: 2414
+Total Memory: 23.68 GB
+Allocated Memory: 1.18 GB
+Cached Memory: 2.46 GB
+Free Memory: 19.44 GB
+Episode is done, episode time:  89.24135613441467
+----------------------------------------------------------------------------------------
+episode:66, reward: -1.3677855832764436, mean reward: -0.78, score: -27.40752677184416, epsilon: 0.8333944600127, total steps: 2449
+Total Memory: 23.68 GB
+Allocated Memory: 1.2 GB
+Cached Memory: 2.47 GB
+Free Memory: 19.41 GB
+Episode is done, episode time:  89.88481616973877
+----------------------------------------------------------------------------------------
+episode:67, reward: -1.5522970408680266, mean reward: -0.57, score: -20.001706176656796, epsilon: 0.8324810327455308, total steps: 2484
+Total Memory: 23.68 GB
+Allocated Memory: 1.21 GB
+Cached Memory: 2.49 GB
+Free Memory: 19.38 GB
+Episode is done, episode time:  95.88189578056335
+----------------------------------------------------------------------------------------
+episode:68, reward: -50, mean reward: -2.62, score: -62.97469254487413, epsilon: 0.8318552982465064, total steps: 2508
+Total Memory: 23.68 GB
+Allocated Memory: 1.22 GB
+Cached Memory: 2.5 GB
+Free Memory: 19.36 GB
+Episode is done, episode time:  64.0131151676178
+----------------------------------------------------------------------------------------
+episode:69, reward: -50, mean reward: -2.59, score: -62.05168814220211, epsilon: 0.8312300641348996, total steps: 2532
+Total Memory: 23.68 GB
+Allocated Memory: 1.23 GB
+Cached Memory: 2.51 GB
+Free Memory: 19.34 GB
+Episode is done, episode time:  64.05942511558533
+----------------------------------------------------------------------------------------
+TEST, reward: 500, score: 548.3261206604905, total steps: 2532
+Test is done, test time:  44.391210079193115
+----------------------------------------------------------------------------------------
+episode:70, reward: 0.40199887404517654, mean reward: -0.83, score: -29.205038610298402, epsilon: 0.8303191605238355, total steps: 2567
+Total Memory: 23.68 GB
+Allocated Memory: 1.24 GB
+Cached Memory: 2.53 GB
+Free Memory: 19.32 GB
+Episode is done, episode time:  92.6369457244873
+----------------------------------------------------------------------------------------
+episode:71, reward: -4.648117641626655, mean reward: -0.76, score: -26.548974683229545, epsilon: 0.8294093190139714, total steps: 2602
+Total Memory: 23.68 GB
+Allocated Memory: 1.25 GB
+Cached Memory: 2.54 GB
+Free Memory: 19.29 GB
+Episode is done, episode time:  90.69855046272278
+----------------------------------------------------------------------------------------
+episode:72, reward: -50, mean reward: -2.55, score: -53.56291530593842, epsilon: 0.8288639234013964, total steps: 2623
+Total Memory: 23.68 GB
+Allocated Memory: 1.26 GB
+Cached Memory: 2.55 GB
+Free Memory: 19.27 GB
+Episode is done, episode time:  59.28156661987305
+----------------------------------------------------------------------------------------
+episode:73, reward: -1.5096223151863697, mean reward: -0.4, score: -14.125226166241234, epsilon: 0.8279557786781904, total steps: 2658
+Total Memory: 23.68 GB
+Allocated Memory: 1.27 GB
+Cached Memory: 2.57 GB
+Free Memory: 19.24 GB
+Episode is done, episode time:  90.98698616027832
+----------------------------------------------------------------------------------------
+episode:74, reward: -50, mean reward: -3.75, score: -74.9629660392871, epsilon: 0.8274373143330557, total steps: 2678
+Total Memory: 23.68 GB
+Allocated Memory: 1.28 GB
+Cached Memory: 2.57 GB
+Free Memory: 19.23 GB
+Episode is done, episode time:  56.471628189086914
+----------------------------------------------------------------------------------------
+episode:75, reward: 2.827071894887645, mean reward: -0.65, score: -22.63151275332202, epsilon: 0.8265308330165869, total steps: 2713
+Total Memory: 23.68 GB
+Allocated Memory: 1.29 GB
+Cached Memory: 2.59 GB
+Free Memory: 19.2 GB
+Episode is done, episode time:  95.90464472770691
+----------------------------------------------------------------------------------------
+episode:76, reward: 0.14853685340802514, mean reward: -0.27, score: -9.31357649624318, epsilon: 0.8256254086449829, total steps: 2748
+Total Memory: 23.68 GB
+Allocated Memory: 1.31 GB
+Cached Memory: 2.61 GB
+Free Memory: 19.17 GB
+Episode is done, episode time:  91.48092126846313
+Traceback (most recent call last):
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/run.py", line 11, in <module>
+    ddqn_agent.train()
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/ddqn_lstm_agent.py", line 254, in train
+    next_state, reward, done, _ = self.env.step(action)
+  File "/home/raid/Desktop/Akhil/AirSim-PyTorch-Drone-DDQN-Agent/env.py", line 53, in step
+    self.client.moveToPositionAsync(quad_state.x_val, quad_state.y_val, -7, 1).join()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/msgpackrpc/future.py", line 22, in join
+    self._loop.start()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/msgpackrpc/loop.py", line 22, in start
+    self._ioloop.start()
+  File "/home/raid/miniconda3/envs/airsim_env/lib/python3.9/site-packages/tornado/ioloop.py", line 863, in start
+    event_pairs = self._impl.poll(poll_timeout)
+KeyboardInterrupt

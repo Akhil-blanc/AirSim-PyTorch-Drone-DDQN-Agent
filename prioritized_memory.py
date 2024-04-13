@@ -22,6 +22,12 @@ class Memory:  # stored as ( s, a, r, s_ ) in SumTree
         p = self._get_priority(error)
         self.tree.add(p, state, action, reward, next_state)
 
+    def continuous_action_add(self, error, state, action, reward, next_state):
+        if isinstance(state, list):
+            raise Exception("how tf did this happen")
+        p = self._get_priority(error)
+        self.tree.continuous_action_add(p, state, action, reward, next_state)
+
     def sample(self, n):
         states = []
         actions = []
