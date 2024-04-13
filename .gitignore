@@ -8,3 +8,4 @@ videos
 tests.txt
 .gitignore
 .gitignore
+wandb
