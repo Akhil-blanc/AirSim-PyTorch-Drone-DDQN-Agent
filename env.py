@@ -56,6 +56,34 @@ class DroneEnv(object):
         state, image = self.get_obs()
 
         return state, result, done, image
+    
+    def continuous_action_step(self, continuous_action):
+        """Step"""
+        #print("new step ------------------------------")
+
+        self.quad_offset = self.interpret_continuous_action(continuous_action)
+        #print("quad_offset: ", self.quad_offset)
+
+        quad_vel = self.client.getMultirotorState().kinematics_estimated.linear_velocity
+        self.client.moveByVelocityAsync(
+            quad_vel.x_val + self.quad_offset[0],
+            quad_vel.y_val + self.quad_offset[1],
+            quad_vel.z_val + self.quad_offset[2],
+            MOVEMENT_INTERVAL
+        ).join()
+        collision = self.client.simGetCollisionInfo().has_collided
+
+        time.sleep(0.5)
+        quad_state = self.client.getMultirotorState().kinematics_estimated.position
+        quad_vel = self.client.getMultirotorState().kinematics_estimated.linear_velocity
+
+        if quad_state.z_val < - 7.3:
+            self.client.moveToPositionAsync(quad_state.x_val, quad_state.y_val, -7, 1).join()
+
+        result, done = self.compute_reward(quad_state, quad_vel, collision)
+        state, image = self.get_obs()
+
+        return state, result, done, image
 
     def reset(self):
         self.client.reset()
@@ -163,5 +191,12 @@ class DroneEnv(object):
             self.quad_offset = (0, scaling_factor, 0)
         elif action == 3:
             self.quad_offset = (0, -scaling_factor, 0)
+
+        return self.quad_offset
+
+    def interpret_continuous_action(self, continuous_action):
+        scaling_factor = 3
+
+        self.quad_offset = (continuous_action[0] * scaling_factor, continuous_action[1] * scaling_factor, continuous_action[2] * scaling_factor)
 
         return self.quad_offset
