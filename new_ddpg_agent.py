@@ -32,30 +32,25 @@ class DDPG_Agent:
         self.gamma = 0.8
         self.tau = 0.05 #Check standard values for tau
         self.learning_rate = 0.001
-        self.batch_size = 256 #512
+        self.batch_size = 512
         self.memory = Memory(10000)
-        self.max_episodes = 100 #10000
+        self.max_episodes = 10000
         self.save_interval = 2
         self.test_interval = 10
         self.network_update_interval = 10
         self.episode = -1
         self.steps_done = 0
-        self.max_steps = 34 #34
+        self.max_steps = 34
 
         self.actor = DDPG_Actor()
-        # self.initialize_weights(self.actor)
+        self.initialize_weights(self.actor)
         self.critic = DDPG_Critic()
-        # self.initialize_weights(self.critic)
+        self.initialize_weights(self.critic)
 
         self.actor_target = DDPG_Actor()
-        # self.initialize_weights(self.actor_target)
+        self.initialize_weights(self.actor_target)
         self.critic_target = DDPG_Critic()
-        # self.initialize_weights(self.critic_target)
-
-        self.actor_optimizer = optim.Adam(self.actor.parameters(), self.learning_rate)
-        # self.actor_target_optimizer = optim.Adam(self.actor_target.parameters(), self.learning_rate)
-        self.critic_optimizer = optim.Adam(self.critic.parameters(), self.learning_rate)
-        # self.critic_target_optimizer = optim.Adam(self.critic_target.parameters(), self.learning_rate)
+        self.initialize_weights(self.critic_target)
 
         self.env = DroneEnv(useDepth)
 
@@ -79,12 +74,14 @@ class DDPG_Agent:
             self.critic = self.critic.to(device)  # to use GPU
             self.critic_target = self.critic_target.to(device)  # to use GPU
             
+        
+
         files = glob.glob(self.save_dir + '/*.pt')
         if len(files) > 0:
             files.sort(key=os.path.getmtime)
             file = files[-1]
             checkpoint = torch.load(file)
-            
+            self.policy.load_state_dict(checkpoint['state_dict'])
             self.episode = checkpoint['episode']
             self.steps_done = checkpoint['steps_done']
             self.actor.load_state_dict(checkpoint['actor_state_dict'])
@@ -104,15 +101,11 @@ class DDPG_Agent:
             if os.path.exists("saved_model_params.txt"):
                 open('saved_model_params.txt', 'w').close()
 
-    def updateNetworks(self):
-        self.critic_target.load_state_dict(self.critic.state_dict())
-        self.actor_target.load_state_dict(self.actor.state_dict())
-
-    # def initialize_weights(self, model):
-    #     for m in model.modules():
-    #         if isinstance(m, torch.nn.Linear):
-    #             torch.nn.init.normal_(m.weight, mean=0., std=0.1)
-    #             torch.nn.init.constant_(m.bias, 0.1)
+    def initialize_weights(self, model):
+        for m in model.modules():
+            if isinstance(m, torch.nn.Linear):
+                torch.nn.init.normal_(m.weight, mean=0., std=0.1)
+                torch.nn.init.constant_(m.bias, 0.1)
 
     def transformToTensor(self, img):
         tensor = torch.FloatTensor(img).to(device)
@@ -120,8 +113,7 @@ class DDPG_Agent:
         tensor = tensor.unsqueeze(0)
         tensor = tensor.float()
         return tensor
-    
-    
+
     def convert_size(self, size_bytes):
         if size_bytes == 0:
             return "0B"
@@ -136,57 +128,41 @@ class DDPG_Agent:
             next_state = self.transformToTensor(next_state)
         if isinstance(state, np.ndarray):
             state = self.transformToTensor(state)
-        
         action = torch.tensor(action, dtype=torch.float).to(device)
-
         next_state_actions = self.actor_target(next_state) #mu target given next state
         next_q_values = self.critic_target(next_state, next_state_actions) #Q target given next state and mu target
         expected_q_values = reward + (self.gamma * next_q_values)
         current_q_values = self.critic(state, action)
-        error_arr = torch.abs(current_q_values - expected_q_values).detach().cpu().numpy()
-        error = np.mean(error_arr)
+        error = torch.abs(current_q_values - expected_q_values).detach().cpu().numpy()
         self.memory.add(error, state, action.detach().cpu().numpy(), reward, next_state)
 
     def learn(self):
         if self.memory.tree.n_entries < self.batch_size:
             return
-        
 
         states, actions, rewards, next_states, idxs, is_weights = self.memory.sample(self.batch_size)
 
-        # states = tuple(states)
-        # next_states = tuple(next_states)
+        states = tuple(states)
+        next_states = tuple(next_states)
 
-        states = torch.tensor(states, dtype=torch.float).to(device)
+        states = torch.cat(states)
         actions = torch.tensor(actions, dtype=torch.float).to(device)
         rewards = torch.tensor(rewards, dtype=torch.float).to(device)
-        next_states = torch.tensor(next_states, dtype=torch.float).to(device)
-
-        # print("states",states.shape)
-        # print("next states",next_states.shape)
-        # print("actions",actions.shape)
+        next_states = torch.cat(next_states)
 
         # Critic update
         next_state_actions = self.actor_target(next_states) #mu target given next state
-        
-        # print("next actions",next_state_actions.shape)
-
         next_q_values = self.critic_target(next_states, next_state_actions) #Q target given next state and mu target
         expected_q_values = rewards + (self.gamma * next_q_values)
-
-        # actions = actions.view(10, -1)
         current_q_values = self.critic(states, actions)
 
         errors = torch.abs(current_q_values.squeeze() - expected_q_values.squeeze()).detach().cpu().numpy()
-        error = np.mean(errors)
+
         for i in range(self.batch_size):
             idx = idxs[i]
-            self.memory.update(idx, error[i])
+            self.memory.update(idx, errors[i])
 
-        critic_loss = F.mse_loss(current_q_values.detach(), expected_q_values.detach())
-        # print("current_q_values", current_q_values)
-        # print("target", expected_q_values)
-        # print(critic_loss)
+        critic_loss = F.mse_loss(current_q_values.squeeze(), expected_q_values.detach())
         self.critic_optimizer.zero_grad()
         critic_loss.backward()
         self.critic_optimizer.step()
@@ -221,7 +197,6 @@ class DDPG_Agent:
             steps = 0
             score = 0
             while True:
-                # print("While true step of action + noise")
                 state = self.transformToTensor(state)
 
                 # action = self.act(state)
@@ -229,18 +204,13 @@ class DDPG_Agent:
                 # print(action.squeeze(dim=0))
                 action_noise = OrnsteinUhlenbeckActionNoise(action.shape[0])
                 action = (action + ((action_noise.sample()).unsqueeze(dim=0)).to(device)).detach().cpu().numpy()
-
-                # print(action, action.shape)
-                # print("Getting next state after taking action step")
                 next_state, reward, done, _ = self.env.continuous_action_step(action)
 
                 if steps == self.max_steps:
                     done = 1
 
-                # print("Appending to memory")
                 #self.memorize(state, action, reward, next_state)
                 self.append_sample(state, action, reward, next_state)
-                # print("Learning")
                 self.learn()
 
                 state = next_state
@@ -253,12 +223,13 @@ class DDPG_Agent:
                         break
 
                     print(
-                        "episode:{0}, reward: {1}, mean reward: {2}, score: {3}, total steps: {4}".format(
-                            self.episode, reward, round(score / steps, 2), score, self.steps_done))
+                        "episode:{0}, reward: {1}, mean reward: {2}, score: {3}, epsilon: {4}, total steps: {5}".format(
+                            self.episode, reward, round(score / steps, 2), score, self.eps_threshold, self.steps_done))
                     wandb.log({
                         "reward": reward,
                         "mean_reward": round(score / steps, 2),
                         "score": score,
+                        "epsilon": self.eps_threshold,
                         "total_steps": self.steps_done
                     })
                     
@@ -266,8 +237,9 @@ class DDPG_Agent:
                     reward_history.append(reward)
                     with open('log.txt', 'a') as file:
                         file.write(
-                            "episode:{0}, reward: {1}, mean reward: {2}, score: {3}, total steps: {4}\n".format(
-                                self.episode, reward, round(score / steps, 2), score, self.steps_done))
+                            "episode:{0}, reward: {1}, mean reward: {2}, score: {3}, epsilon: {4}, total steps: {5}\n".format(
+                                self.episode, reward, round(score / steps, 2), score, self.eps_threshold,
+                                self.steps_done))
 
                     if torch.cuda.is_available():
                         print('Total Memory:', self.convert_size(torch.cuda.get_device_properties(0).total_memory))
@@ -280,7 +252,6 @@ class DDPG_Agent:
                         memory_usage_allocated = np.float64(round(torch.cuda.memory_allocated(0) / 1024 ** 3, 1))
                         memory_usage_cached = np.float64(round(torch.cuda.memory_reserved(0) / 1024 ** 3, 1))
 
-                    # save checkpoint
                     if self.episode % self.save_interval == 0:
                         checkpoint = {
                                     'episode': self.episode,
@@ -290,7 +261,6 @@ class DDPG_Agent:
                                 }
                         torch.save(checkpoint, self.save_dir + f'/EPISODE{self.episode}_actor_critic.pt')
 
-                        
 
                     if self.episode % self.network_update_interval == 0:
                         self.updateNetworks()
