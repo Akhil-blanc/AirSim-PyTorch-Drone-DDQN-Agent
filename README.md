@@ -11,6 +11,6 @@
 Run:
 1) Run blocks.exe
 2) ```
-   python test.py
+   python inference.py
    ```
 
